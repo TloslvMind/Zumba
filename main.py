@@ -7,7 +7,7 @@ app = Flask(__name__)
 Bootstrap5(app)
 
 @app.route('/')
-def hello_world():  # put application's code here
+def home():  # put application's code here
     return render_template("index.html")
 
 
@@ -15,6 +15,33 @@ def hello_world():  # put application's code here
 def show_pictures():
     return render_template('album.html')
 
+
+@app.route('/gallery/photos')
+def show_photos():
+    return render_template('photos.html')
+
+@app.route('/gallery/videos')
+def show_videos():
+    return render_template('videos.html')
+
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/contacts')
+def contact():
+    return render_template('contacts.html')
+
+
+@app.route('/schedule')
+def schedule():
+    return render_template('schedule.html')
+
+
+@app.route('/reviews')
+def reviews():
+    return render_template('reviews.html')
 
 
 if __name__ == '__main__':

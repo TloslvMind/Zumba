@@ -1,16 +1,21 @@
 {% extends "base.html" %}
 
+{% block title %} Головна {% endblock %}
+
 {% block content %}
+
+{% include 'popup.html' %}
 
 {% include 'hero.html' %}
 
+{% include 'features.html' %}
+
 {% include 'big_carousel.html' %}
 
-{% include 'features.html' %}
 
 {#{% include 'prices.html' %}#}
 
-{% include 'jumbotron.html' %}
+{#{% include 'jumbotron.html' %}#}
 
 {#{% include 'album.html' %}#}
 

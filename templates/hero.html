@@ -2,7 +2,7 @@
 <div class="container col-xxl-8 px-4 pt-1">
     <div class="row flex-lg-row-reverse align-items-center g-4 ">
       <div class="col-10 col-sm-8 col-lg-6 py-5">
-        <img src="static/assets/images/Girls-first.jpg" class=" photo_size d-block mx-lg-auto img-fluid " alt="Bootstrap Themes"  loading="lazy">
+        <img src="{{ url_for('static', filename='assets/images/Girls-first.jpg') }}" class=" photo_size d-block mx-lg-auto img-fluid " alt="Bootstrap Themes"  loading="lazy">
       </div>
 
       <div class="col-lg-6">
@@ -10,8 +10,8 @@
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-4">Ставай частиною нашого Zumba-світу!</h1>
         <p class="lead">Приєднуйся до наших занять, щоб відчути гармонію тіла і душі! Zumba – це твоя енергія, твоє натхнення, твій стиль життя.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
-          <button type="button" class="btn btn-dark btn-lg px-4 me-md-2">Primary</button>
-          <button type="button" class="btn btn-outline-dark btn-lg px-4">Default</button>
+          <button type="button" class="btn btn-dark btn-lg px-4 me-md-2">Записатися на тренування</button>
+          <button type="button" class="btn btn-outline-dark btn-lg px-4">Дізнатися більше</button>
         </div>
       </div>
     </div>

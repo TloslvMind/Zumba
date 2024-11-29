@@ -1,0 +1,16 @@
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Відкрити банер
+</button>
+
+<!-- Модальне вікно -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content dropdown-background">
+      <div class="position-relative">
+        <!-- Кнопка закриття, яка автоматично закриває модальне вікно -->
+        <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close" style="top: 10px; right: 10px; background-color: rgba(60, 130, 200, 0.5); border-radius: 50%;"></button>
+        <img src="{{ url_for('static', filename='assets/banners/popup-banner.jpg') }}" class="img-fluid" alt="Popup Banner">
+      </div>
+    </div>
+  </div>
+</div>

@@ -9,6 +9,12 @@
     {% block styles %}
     {{ bootstrap.load_css() }}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='assets/images/title-logo.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static', filename='assets/images/title-logo.png') }}" sizes="16x16">
+    <link rel="icon" href="{{ url_for('static', filename='assets/images/title-logo.png') }}" sizes="32x32">
+    <link rel="icon" href="{{ url_for('static', filename='assets/images/title-logo.png') }}" sizes="96x96">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='assets/images/title-logo.png') }}">
+    <link rel="icon" href="{{ url_for('static', filename='assets/images/title-logo.png') }}" type="image/x-icon">
     {% endblock %}
     <title>{% block title %} {% endblock %}</title>
 </head>
@@ -20,5 +26,6 @@
 </section>
     {% include 'footer.html' %}
     {{ bootstrap.load_js() }}
+{#    <script src="{{ url_for('static', filename='/js/popup.js') }}"></script>#}
 </body>
 </html>

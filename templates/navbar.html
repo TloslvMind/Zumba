@@ -1,30 +1,50 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg  gradient-nav ">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+      <img class="icon-square me-4" src="{{ url_for('static', filename='assets/images/Zumba-logo1.png') }}" alt="dsfdsfd" height="60">
+{#    <a class="navbar-brand" href="#">Navbar</a>#}
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav nav_font me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link color-head " aria-current="page" href="{{ url_for('home') }}">Головна</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link color-head" href="{{ url_for('about') }}">Про нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link color-head" href="{{ url_for('schedule') }}">Розклад</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link color-head" href="{{ url_for('contact') }}">Контакти</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link color-head" href="{{ url_for('reviews') }}">Відгуки</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+          <a class="nav-link dropdown-toggle color-head" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Галерея
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+          <ul class="dropdown-menu dropdown-background">
+            <li><a class="dropdown-item" href="{{ url_for('show_photos') }}">Фото</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('show_videos') }}">Відео</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Івенти</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle color-head" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Доступні заняття
+          </a>
+          <ul class="dropdown-menu dropdown-background">
+              <li><a class="dropdown-item" href="#">Онлайн тренування</a></li>
+              <li><a class="dropdown-item" href="https://docs.google.com/forms/d/16pPr1l5k_rx5KMBJPuWw5s6gPH--AifFhHnC4iUwJ48/">Приватне тренування</a></li>
+              <li><a class="dropdown-item" href="#">Відео заняття</a></li>
+              <li><a class="dropdown-item" href="#">Відео на замовлення</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
         </li>
       </ul>
       <form class="d-flex" role="search">

@@ -16,9 +16,21 @@
 /*  }*/
 /*}*/
 
-.gradient-background {
-  background-color: lavenderblush;
+/*.gradient-background {*/
+/*  background-color: lavenderblush;*/
+/*}*/
+
+
+.dropdown-background {
+  background-color: deeppink;
 }
+
+.dropdown-menu li a {
+  color: azure;
+  font-size: 17px;
+  font-weight: bold;
+}
+
 
 .gradient-header {
   background-color: blue;
@@ -39,9 +51,9 @@
   border-radius: 50%;
 }
 
-.nav_font {
-  font-size: 20px;
-}
+/*.nav_font {*/
+/*  font-size: 16px;*/
+/*}*/
 
 .header_color-font {
   font-size: 30px;
@@ -49,7 +61,8 @@
 }
 
 .color-head {
-  color: purple;
+  font-size: 18px;
+  color: blueviolet;
 }
 
 .carousel-inner img {
@@ -60,4 +73,71 @@
 
 .photo_size {
     max-height: 500px;
+}
+
+
+@keyframes spinner-grow {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+/* Зменшення швидкості анімації */
+@keyframes spinner-grow {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    opacity: 50;
+  }
+}
+
+/* Зменшення швидкості анімації */
+.spinner-grow {
+  width: 3rem; /* Стандартний розмір */
+  height: 3rem;
+  animation: spinner-grow 3s linear infinite; /* 2 секунди на один цикл */
+}
+
+
+/*.carousel-inner {*/
+/*  display: flex;*/
+/*  align-items: center;  !* Центрує зображення по вертикалі *!*/
+/*  justify-content: center;  !* Центрує зображення по горизонталі *!*/
+/*  height: 500px;  !* Встановлює висоту каруселі *!*/
+/*}*/
+
+.carousel-item img {
+  max-width: 100%;  /* Обмежує ширину зображення */
+  max-height: 100%;  /* Обмежує висоту зображення */
+  object-fit: contain;  /* Відображення зображення без обрізки */
+}
+
+
+.centered {
+    text-align: center;
+    margin-bottom: 1.5rem; /* або будь-яке бажане значення */
+}
+
+.centered h2 {
+    font-size: 2rem; /* Збільшує розмір тексту */
+    font-weight: bold; /* Зробити текст жирним */
+    color: mediumpurple; /* Змінює колір тексту */
+}
+
+.centered p {
+    font-size: 1rem; /* Збільшує розмір тексту */
+    font-weight: bold; /* Зробити текст жирним */
+    color: deeppink; /* Змінює колір тексту */
 }

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %} Розклад {% endblock %}
+
+{% block content %}
+
+    <section id="schedule" class="container py-5">
+  <h2 class="text-center mb-5">Розклад</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Розклад занять</h3>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>День</th>
+            <th>Час</th>
+            <th>Тип заняття</th>
+            <th>Записатися</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Понеділок</td>
+            <td>18:00 - 19:00</td>
+            <td>Zumba для початківців</td>
+            <td><a href="#" class="btn btn-primary">Записатися</a></td>
+          </tr>
+          <tr>
+            <td>Середа</td>
+            <td>19:00 - 20:00</td>
+            <td>Zumba для дорослих</td>
+            <td><a href="#" class="btn btn-primary">Записатися</a></td>
+          </tr>
+          <!-- Додати інші заняття тут -->
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <h3>Інструкції</h3>
+      <p>Щоб записатися на заняття, просто натискайте на кнопку "Записатися" біля відповідного розкладу.</p>
+      <p>Не забудьте одягнути комфортний одяг та взуття для тренувань!</p>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

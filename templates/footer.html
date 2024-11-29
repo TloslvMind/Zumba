@@ -4,22 +4,22 @@
   <footer class="">
     <div class="row">
       <div class="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
+        <h5>Навігація</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Головна</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Про нас</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Розклад</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Відгуки</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Галерея</a></li>
         </ul>
       </div>
 
       <div class="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
+        <h5>Заняття</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Онлайн</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Приватні</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Відео</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
         </ul>
@@ -50,22 +50,22 @@
        <div class="d-flex flex-column flex-sm-row justify-content-between pt-2 mt-2 mb-2 pb-2 ">
         <ul class="list-unstyled d-flex">
          <li class="ms-3"><a class="link-body-emphasis" href="#">
-            <img class="bi" width="24" height="24" src="static/assets/svgs/instagram.svg"></a>
+            <img class="bi" width="24" height="24" src="{{ url_for('static', filename='assets/svgs/instagram.svg') }}"></a>
         </li>
          <li class="ms-3"><a class="link-body-emphasis" href="#">
-            <img class="bi" width="24" height="24" src="static/assets/svgs/facebook.svg"></a>
+            <img class="bi" width="24" height="24" src="{{ url_for('static', filename='assets/svgs/facebook.svg') }}"></a>
         </li>
          <li class="ms-3"><a class="link-body-emphasis" href="#">
-            <img class="bi" width="24" height="24" src="static/assets/svgs/messenger.svg"></a>
+            <img class="bi" width="24" height="24" src="{{ url_for('static', filename='assets/svgs/messenger.svg') }}"></a>
         </li>
         <li class="ms-3"><a class="link-body-emphasis" href="#">
-            <img class="bi" width="24" height="24" src="static/assets/svgs/telegram.svg"></a>
+            <img class="bi" width="24" height="24" src="{{ url_for('static', filename='assets/svgs/telegram.svg') }}"></a>
         </li>
         <li class="ms-3"><a class="link-body-emphasis" href="#">
-            <img class="bi" width="24" height="24" src="static/assets/svgs/whatsapp.svg"></a>
+            <img class="bi" width="24" height="24" src="{{ url_for('static', filename='assets/svgs/whatsapp.svg') }}"></a>
         </li>
         <li class="ms-3"><a class="link-body-emphasis" href="#">
-            <img class="bi" width="24" height="24" src="static/assets/svgs/twitter-x.svg"></a>
+            <img class="bi" width="24" height="24" src="{{ url_for('static', filename='assets/svgs/twitter-x.svg') }}"></a>
         </li>
       </ul>
       </div>

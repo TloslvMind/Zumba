@@ -1,36 +1,11 @@
 <section>
+{% include 'navbar.html' %}
 
-<nav class="py-2 gradient-nav border-bottom  pb-2">
-    <div class="container d-flex flex-wrap">
-      <ul class="nav me-auto nav_font">
-        <li ><img class="icon-square me-3" src="static/assets/images/Zumba-logo1.png" alt="dsfdsfd" height="60"></li>
-        <li class="nav-item"><a href="#" class="nav-link color-head px-3 active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link color-head px-3">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link color-head px-3">Pricing</a></li>
-        <li class="nav-item"><a href="{{ url_for('show_pictures') }}" class="nav-link color-head px-3">Pictures</a></li>
-        <li class="nav-item"><a href="#" class="nav-link color-head px-3">About</a></li>
-      </ul>
-      <ul class="nav nav_font">
-        <li class="nav-item"><a href="#" class="nav-link color-head px-2">Login</a></li>
-        <li class="nav-item"><a href="#" class="nav-link color-head px-2">Sign up</a></li>
-      </ul>
-    </div>
-  </nav>
-   <header class="py-3 border-bottom gradient-header">
+   <header class="py-2 border-bottom gradient-header">
     <div class="container d-flex flex-wrap justify-content-center">
-      <div class=" d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-decoration-none">
-
-{#          <img class="icon-square me-5" src="static/assets/images/Zumba-logo1.png" alt="dsfdsfd" height="60">#}
+      <div class=" d-flex align-items-center mb-2 mb-lg-0 me-lg-auto text-decoration-none">
         <span class="header_color-font">Zumba Trainer</span>
       </div>
-{#        <div class=" d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">#}
-{#            <span class="">Рухайся з нами – будь в ритмі Zumba! Твій танець починається тут!</span>#}
-{#        </div>#}
-
-      <form class="col-12 col-lg-auto mb-3 mb-lg-0 d-flex" role="search">
-        <input type="search" class="form-control me-2" placeholder="Search..." aria-label="Search">
-        <button class="btn btn-outline-light" type="submit">Search</button>
-      </form>
     </div>
   </header>
 </section>

@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %} Відгуки {% endblock %}
+
+{% block content %}
+
+<section id="testimonials" class="container py-5">
+  <h2 class="text-center mb-5">Відгуки наших клієнтів</h2>
+
+  <!-- Секція для відгуків -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="client1.jpg" class="card-img-top" alt="Клієнт 1">
+        <div class="card-body">
+          <h5 class="card-title">Марія К.</h5>
+          <p class="card-text">"Тренування на Zumba — це справжнє задоволення! Я не тільки полюбила заняття, але й познайомилася з чудовими людьми. Дуже вдячна тренерам за підтримку та енергію!"</p>
+          <div class="d-flex">
+            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="client2.jpg" class="card-img-top" alt="Клієнт 2">
+        <div class="card-body">
+          <h5 class="card-title">Іван П.</h5>
+          <p class="card-text">"Заняття допомогли мені не тільки схуднути, але й почуватися впевненіше. Вдячний за атмосферу та професіоналізм тренерів!"</p>
+          <div class="d-flex">
+            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="client3.jpg" class="card-img-top" alt="Клієнт 3">
+        <div class="card-body">
+          <h5 class="card-title">Олена Р.</h5>
+          <p class="card-text">"Чудове місце для тренувань! Я почала відвідувати Zumba недавно і вже помітила покращення фізичної форми. Дуже рада, що знайшла цей клуб!"</p>
+          <div class="d-flex">
+            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

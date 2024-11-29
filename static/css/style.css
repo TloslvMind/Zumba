@@ -17,11 +17,11 @@
 /*}*/
 
 .gradient-background {
-  background-color: mistyrose;
+  background-color: lavenderblush;
 }
 
 .gradient-header {
-  background-color: deeppink;
+  background-color: blue;
 }
 
 .gradient-nav {
@@ -29,7 +29,7 @@
 }
 
 .icon-square {
-  width: 3rem;
+  width: 4rem;
   height: 3rem;
   border-radius: 0.75rem;
 }
@@ -40,10 +40,24 @@
 }
 
 .nav_font {
-  font-size: large;
+  font-size: 20px;
 }
 
 .header_color-font {
   font-size: 30px;
   color: azure;
+}
+
+.color-head {
+  color: purple;
+}
+
+.carousel-inner img {
+    max-width: 100%; /* Зберігає пропорції */
+    max-height: 600px; /* Встановлює максимальну висоту */
+    object-fit: cover; /* Обрізає зображення, щоб воно не викривлялось */
+}
+
+.photo_size {
+    max-height: 500px;
 }
